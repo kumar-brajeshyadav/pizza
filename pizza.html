@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        .nav{
+            height: 70px;
+            width: 100%;
+            /* border:2px solid black; */
+            /* background-color: rgba(0, 0,0, 0.2); */
+            box-shadow: 1px 1px 3px #000;
+            position: relative;
+        }
+
+
+        h1{
+            font-size: 45px;
+            position:absolute;
+            left: 30px;
+            bottom: 10px;
+        }
+
+
+        span{
+            color: red;
+        }
+
+
+        a{
+            font-size: 20px;
+            margin: 20px;
+            color: #000;
+            text-decoration:none ;
+            position: relative;
+            left: 60%;
+            top: 25px;
+        }
+
+
+        .stm{
+            height: 100px;
+            width: 200px;
+            font-size: 20px;
+            color:#fff;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: #FD0606;
+        }
+
+
+         a:before{
+           content: "";
+           position: absolute;
+           top: 20px;
+           left: 0px;
+           width: 0;
+           height: 3px;
+           background-color: #FD0606;
+           transition: all 0.5s linear;
+        }
+        
+
+        
+        a:after{
+           content: "";
+           position: absolute;
+           top: -10%;
+           right: 0;
+           width: 0;
+           height: 3px;
+           background-color: #fd0606;
+           transition: all 0.5s linear;
+           
+        } 
+        
+
+      
+        
+        a:hover::before{
+            width: 100%;
+            background-color:black;
+        }
+
+        a:hover::after{
+            width: 100%;
+            background-color: black;
+        } 
+      
+
+
+        .main{
+            position: relative;
+            top: 150px;
+            left: 20px;
+        }
+        
+
+        p{
+            font-size: 20px
+        }
+
+
+        h2{
+            font-size: 60px;
+        }
+
+        
+        h3{
+            font-size: 80px;
+        }
+        
+        
+        button{
+            height: 30px;
+            width: 100px;
+            color: #fff;
+            margin: 5px;
+            border-radius: 4px;
+        }
+        
+
+        img{
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            right: 30px;
+            bottom: -100px;
+            animation: salid all 10s linear infinite;
+        }
+        
+        
+        img::after{
+            content: "";
+
+        }
+
+
+        @keyframes salid{
+            form{
+            transform: rotateY(0deg);
+            }
+
+
+            to{
+            transform: rotateY(360deg);
+            }
+        }
+        
+        
+        .com{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            bottom: -200px;
+            right: 500px;
+            filter:drop-shadow(2px 2px 5px black) ;
+            transform: rotate(-60deg);
+        }
+        
+
+        .one{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            bottom: -150px; 
+            filter:drop-shadow(2px 2px 5px black) ;
+            left: 10px;
+            transition: all 1s linear;
+        }
+
+        
+        .tow{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            bottom: -150px; 
+            left: 200px;
+            filter:drop-shadow(2px 2px 5px black) ;
+            transition: all 1s linear;
+        }
+        
+
+        .three{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            bottom: -150px; 
+            left: 400px;
+            filter:drop-shadow(2px 2px 5px black) ;
+            transition: all 1s linear;
+        }
+        
+        
+        
+        
+        .one:hover{
+            transform: translateY(-50px);
+        }
+
+
+        .tow:hover{
+            transform: translateY(-50px);
+        }
+
+
+        .three:hover{
+            transform: translateY(-50px);
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+   <div class="nav">
+    <h1> <span>Pi</span>zza</h1>
+    <a href="">Home</a>
+    <a href="">Food's</a>
+    <a href="">Offer's</a>
+    <a href="">Your order</a>
+    <a href="">Deivery</a>
+    <a class="stm" href="">Cart</a>
+   </div>
+
+
+   <div class="main">
+    <img src="pizza.png" alt="">
+    <img class="com" src="pngegg (7).png" alt="">
+    <img class="one" src="pngegg (6).png" alt="">
+    <img class="tow" src="pngegg (6).png" alt="">
+    <img class="three" src="pngegg (6).png" alt="">
+
+    <p>Free Home Dellvery</p>
+    <h2>Quality F<span>oo</span>ds</h2>
+    <h3>Pizza of the Week</h3>
+    <button style="background-color: red;">Order now"</button>
+    <button style="background-color: black;">25% Off </button>
+   </div>
+</body>
+</html>
